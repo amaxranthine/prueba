@@ -1,0 +1,12 @@
+Necesitamos registrar información sobre un concierto de Seventeen. Un concreto un setlist de canciones.
+Cada canción tiene:
+
+Nombre
+Duración
+Disco al que pertenece
+Género.
+
+Registra un mínimo de 4 canciones para el setlist i
+
+Muestra la duración total del repertorio de ese setlist.
+Dado el nombre de un disco, devolver las canciones de ese disco.

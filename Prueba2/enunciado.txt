@@ -1,0 +1,12 @@
+Vamos a organizar la información sobre un concierto de la banda Seventeen, detallando un conjunto de canciones.
+Cada canción debe incluir:
+
+Título
+Duración
+Álbum de origen
+Género musical.
+Por favor, proporciona al menos 4 canciones para el repertorio.
+
+Calcula la duración total del setlist generado.
+
+Si se indica un nombre de álbum, muestra las canciones asociadas a ese álbum.
