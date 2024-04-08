@@ -4,7 +4,8 @@
     case rap;
     case balada;
     case rock;
- }
+ } 
+require_once "Genero.php";
 class Cancion {
     private string $nom;
     private int $duracion;
@@ -35,7 +36,8 @@ class Cancion {
       return $this->genero;
     }
   }
-
+ 
+ require_once "Cancion.php";
   class Setlist {
    private $canciones;
  
@@ -63,8 +65,9 @@ class Cancion {
    return $canciones_filtradas;
  }
  }
- class Index { 
- public function main() {
+ require_once "Genero.php";
+ require_once "Cancion.php";
+ require_once "Setlist.php";
 // Crear las canciones
 $cancion1 = new Cancion("Ready to Love", 218, "An Ode", Genero::pop);
 $cancion2 = new Cancion("Hit", 205, "Your Choice", Genero::rap);
@@ -93,6 +96,5 @@ foreach ($cancionesDiscoReadyLove as $cancion) {
   echo " - " . $cancion->getNombre() . " (" . $cancion->getDuracion() . " segundos");
 }
 
-}
- }
+
 ?>
