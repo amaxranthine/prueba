@@ -92,8 +92,7 @@ foreach($this->canciones as $cancion){
 return $canciones_album;
 }
 }
-class Index {
-    public function main() {
+
 // Creamos el objeto Concierto
 $concierto = new Concierto("Seventeen", "2024-04-07", "Palau Sant Jordi", "K-pop");
 
@@ -122,8 +121,7 @@ $canciones_album_ode = $concierto->obtenerCancionesAlbum("An Ode");
 foreach ($canciones_album_ode as $cancion) {
     echo $cancion->titulo . "\n";
 }
-}
-}
+
 
 
 
