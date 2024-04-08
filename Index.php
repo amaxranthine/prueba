@@ -87,10 +87,10 @@ $duracionTotal = $setlist->obtenerDuracionTotal();
 $cancionesDiscoReadyLove = $setlist->obtenerCancionesPorDisco("Ready to Love");
 
 // Mostrar la información
-echo "Duración total del setlist: " . $duracionTotal . " segundos" . PHP_EOL;
-echo "Canciones del disco 'Ready to Love':" . PHP_EOL;
+echo "Duración total del setlist: " . $duracionTotal . " segundos";
+echo "Canciones del disco 'Ready to Love':";
 foreach ($cancionesDiscoReadyLove as $cancion) {
-  echo " - " . $cancion->getNombre() . " (" . $cancion->getDuracion() . " segundos)" . PHP_EOL;
+  echo " - " . $cancion->getNombre() . " (" . $cancion->getDuracion() . " segundos");
 }
 
 }
