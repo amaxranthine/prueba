@@ -4,6 +4,8 @@ Enum Genero{
     case rap;
     case balada;
     case rock;
+    case kpop;
+    case funky;
  }
 class Cancion{
     private string $titulo;
@@ -96,10 +98,10 @@ class Index {
 $concierto = new Concierto("Seventeen", "2024-04-07", "Palau Sant Jordi", "K-pop");
 
 // Creamos las canciones
-$cancion1 = new Cancion("Ready to Love", 3.06, "An Ode", "K-pop, pop");
-$cancion2 = new Cancion("Rock with you", 3.10, "Face the Sun", "K-pop, pop rock");
-$cancion3 = new Cancion("Very Nice", 3.09, "Love & Letter", "K-pop, funk");
-$cancion4 = new Cancion("Don't Wanna Cry", 3.33, "Al1", "K-pop, pop balada");
+$cancion1 = new Cancion("Ready to Love", 3.06, "An Ode",  Genero::pop);
+$cancion2 = new Cancion("Rock with you", 3.10, "Face the Sun", Genero:: rock);
+$cancion3 = new Cancion("Very Nice", 3.09, "Love & Letter", Genero::kpop);
+$cancion4 = new Cancion("Don't Wanna Cry", 3.33, "Al1", Genero::balada);
 
 // Agregamos las canciones al setlist
 $concierto->agregar_cancion($cancion1);
